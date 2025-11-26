@@ -1,4 +1,4 @@
-package com.example.web.controller;
+package com.example.web.common;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,5 +13,10 @@ public class HomeController {
     @GetMapping("/")
     public String getHome() {
         return "home";
+    }
+
+    @GetMapping("/separate")
+    public void getSeparate() {
+
     }
 }
