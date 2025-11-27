@@ -49,6 +49,9 @@ public class MemberController {
 
         if (result.hasErrors()) {
             log.info("정상적으로 다시 register");
+            for (Object fieldError : result.getAllErrors()) {
+                System.out.println(fieldError);
+            }
             return "/member/register";
         }
 
